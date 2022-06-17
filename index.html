@@ -1,0 +1,91 @@
+<!-- 웹기능사 세팅 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹기능사 하드코딩</title>
+    <link rel="stylesheet" href="css/web.css">
+    <!-- 제이쿼리 연결자리 -->
+    <script src="js/web.js"></script>
+</head>
+<body>
+     <!-- A,B형 기본구조 >> .contaniner>header#hd+#slider+#tabs+footer#ft
+      <div class="contaniner">
+        <header id="hd"></header>
+        <div id="slider"></div>
+        <div id="tabs"></div>
+        <footer id="ft"></footer>
+    </div>
+
+    A,B형 공통클래스 사용하여 그리드시스템부터  >> .contaniner>header#hd.h100.rel.d-flex+#slider.h300+#tabs.h200.d-flex+footer#ft.h100.d-flex
+    <div class="contaniner">
+        <header id="hd" class="h100 rel d-flex"></header>
+        <div id="slider" class="h300"></div>
+        <div id="tabs" class="h200 d-flex"></div>
+        <footer id="ft" class="h100 d-flex"></footer>
+    </div>
+
+
+    C형 기본구조 >> .container.m-0.d-flex>header#hd.w120+.contentBox>#slider+#tabs+footer#ft -->
+    <!-- <div class="container m-0 d-flex">
+        <header id="hd" class="w120"></header>
+        <div class="contentBox">
+            <div id="slider"></div>
+            <div id="tabs"></div>
+            <footer id="ft"></footer>
+        </div>
+    </div> -->
+
+    <!-- C형 공통클래스 사용하여 그리드시스템부터  >>
+          .container.d-flex.align-items-start>header#hd.w250.d-flex.justify-content-between+.contentBox.w750>#slider.h300+#tabs.h200.d-flex+footer#ft.h100.d-flex.justify-content-between -->
+          <div class="container d-flex align-items-start">
+            <header id="hd" class="w250">
+                <!-- h1>a{로고}^ul#gnb>li*4>a{대메뉴}+ul>li*3>a{소메뉴} -->
+                <h1><a href="">로고</a></h1>
+                <ul id="gnb">
+                    <li>
+                        <a href="">대메뉴</a>
+                        <ul>
+                            <li><a href="">소메뉴</a></li>
+                            <li><a href="">소메뉴</a></li>
+                            <li><a href="">소메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">대메뉴</a>
+                        <ul>
+                            <li><a href="">소메뉴</a></li>
+                            <li><a href="">소메뉴</a></li>
+                            <li><a href="">소메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">대메뉴</a>
+                        <ul>
+                            <li><a href="">소메뉴</a></li>
+                            <li><a href="">소메뉴</a></li>
+                            <li><a href="">소메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">대메뉴</a>
+                        <ul>
+                            <li><a href="">소메뉴</a></li>
+                            <li><a href="">소메뉴</a></li>
+                            <li><a href="">소메뉴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </header>
+            <div class="contentBox w750">
+                <div id="slider" class="h300 black"></div>
+                <div id="tabs" class="h200 d-flex red"></div>
+
+                <footer id="ft" class="h100 d-flex justify-content-between blue"></footer>
+            </div>
+          </div>
+
+</body>
+</html>
